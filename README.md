@@ -8,4 +8,4 @@ Autores:
 - Layla Arredondo Nuñez
 - Rodrigo Melgarejo Alegre
 
-Enlace: [http://catfood.science/hackingthesound/](http://joedicastro.com "titulo")
+Enlace: [http://catfood.science/hackingthesound/](http://catfood.science/hackingthesound/)
