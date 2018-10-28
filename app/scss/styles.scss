@@ -1,0 +1,469 @@
+ // COLORES
+ $primary_color:#E8210C;
+ $secondary_color:#1375F5;
+ $black_pure: black;
+ $black:rgb(10, 10, 10);
+ $grey:rgb(50, 50, 50);
+ $white:white;
+ // TYPO
+ @import url('https://fonts.googleapis.com/css?family=Raleway');
+ * {
+     font-family: 'Raleway', sans-serif;
+ }
+ 
+ $typo-font-principal: 'Raleway',
+ sans-serif;
+ $typo-font-secundario: 'Roboto',
+ arial;
+ $typo-big:4em;
+ $typo-medium:2.5em;
+ $typo-small:1.45em;
+ $typo-small-plus:1.2em;
+ $typo-small-plus-ultra:1em;
+ h1 {
+     font-size: $typo-big;
+     text-align: left
+ }
+ 
+ h2 {
+     font-size: $typo-medium;
+ }
+ 
+ h3 {
+     font-size: $typo-medium;
+     font-weight: 400
+ }
+ 
+ p {
+     font-size: $typo-small;
+ }
+ 
+ a,
+ strong {
+     color: $black_pure;
+     font-weight: 600;
+     word-wrap: break-word!important;
+ }
+ 
+ .texto_en_negrita {
+     font-weight: 600
+ }
+ 
+ em {
+     font-size: $typo-small
+ }
+ 
+ .subtitulo {
+     font-size: 1.5em;
+     font-weight: 400;
+     color: white
+ }
+ 
+ .col.little-padding {
+     padding: 2em
+ }
+ 
+ .boton-ofertas {
+     background-color: $primary_color;
+     &:hover {
+         background-color: $black
+     }
+     &:active {
+         background-color: $black
+     }
+     &:focus {
+         background-color: $black
+     }
+ }
+ 
+ // MENU
+ .navbar-fixed {
+     font-size: $typo-small;
+     position: fixed;
+     & .menu-principal {
+         background-color: $black_pure
+     }
+ }
+ 
+ .vertical_line_menu_item {
+     padding: 0
+ }
+ 
+ // CONTENEDOR PRINCIPAL
+ .contenedor {
+     width: 100%;
+ }
+ 
+ .contenedor_principal {
+     min-height: calc(80vh + 64px);
+     background-image: url(../img/background.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     & h1 {
+         color: $white;
+         margin: 0;
+         text-shadow: 1px 1px 1px black;
+         background-color: rgba(0, 0, 0, 1);
+         padding: .25em .25em;
+         border-radius: 10px;
+     }
+     & .subtitulo {
+         font-weight: 700;
+         border-radius: 5px;
+         padding: 10px 20px;
+         margin-top: -10px;
+         display: inline-block;
+         background-color: rgba(0, 0, 0, 1);
+     }
+ }
+ 
+ .contenedor_de_botones {
+     margin-top: 1em;
+     & .boton {
+         margin: 1em;
+         font-size: $typo-small;
+         font-family: $typo-font-principal;
+         font-weight: 400;
+         text-transform: lowercase;
+         &-principal {
+             background-color: $primary_color;
+         }
+         &-secundario {
+             background-color: $secondary_color
+         }
+     }
+ }
+ 
+ // CONTENEDOR NOSOTROS
+ .contenedor_nosotros {
+     min-height: 40vh;
+     margin: 5em auto 0 auto;
+ }
+ 
+ // CONTENEDOR AYUDA
+ .contenedor_ayuda {
+     min-height: 40vh;
+     margin: 5em auto 0em auto;
+ }
+ 
+ .espacio_separacion {
+     height: 20px;
+ }
+ 
+ .json_container_ayuda>.container>.card {
+     padding: 2em
+ }
+ 
+ .contenedor_ayuda {
+     .dropdown_hts {
+         margin-top: 1em;
+         margin-bottom: 2em;
+         & p {
+             margin: 0;
+         }
+         & .dropdown-trigger {
+             background-color: $primary_color
+         }
+         & .dropdown-content {
+             flex-direction: row;
+             flex-wrap: wrap;
+             width: 63vw!important;
+             & li {
+                 max-width: 300px;
+                 & a {
+                     color: $black;
+                 }
+             }
+         }
+         & .dropdown-ocultar {
+             background-color: transparent;
+             color: $black;
+             border: 0;
+             border-radius: 0;
+             box-shadow: none;
+         }
+     }
+     // VARIACIONES PARA AYUDA PUBLICA
+     &--publica.contenedor_ayuda {
+         margin-top: 0;
+         & .dropdown-trigger.btn {
+             background-color: $secondary_color
+         }
+     }
+ }
+ 
+ .row .col.fixing-padding-bottom {
+     padding-bottom: 0.5em;
+ }
+ 
+ // CONTENEDOR APPS
+ .contenedor_apps {
+     background-color: $white;
+     min-height: 40vh;
+     margin: 5em auto 0em auto;
+     & h1 {
+         padding: 2em;
+     }
+     & .s3 {
+         padding: 20px;
+     }
+     & .col.s8 .col.s12 {
+         padding: 0
+     }
+ }
+ 
+ .card {
+     padding: 25px 0;
+     & .card-content {
+         padding: 15px;
+         & strong {
+             margin: 0;
+         }
+     }
+     & .card-content h2 {
+         margin-top: -10px;
+         font-size: $typo-small;
+         font-weight: 600
+     }
+     & .card-content p {
+         font-size: $typo-small-plus;
+         word-wrap: break-word;
+     }
+ }
+ 
+ .aplicaciones_right {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ 
+ // BOLSA DE TRABAJO
+ .bolsa_de_trabajo .card-content h2 {
+     margin: 0
+ }
+ 
+ .bolsa_de_trabajo .card-content p {
+     margin: .75em 0
+ }
+ 
+ // FOOTER
+ footer.page-footer {
+     background-color: $black
+ }
+ 
+ .json_container_ayuda {
+     background-color: white;
+     & .title {
+         font-weight: 600;
+     }
+     & .subtitle {
+         color: $grey;
+     }
+     & .card {
+         min-height: 17.5em
+     }
+ }
+ 
+ i:hover {
+     color: $primary_color;
+     transition: 0.75s
+ }
+ 
+ .input-field .prefix.active {
+     color: $secondary_color!important
+ }
+ 
+ // VENTANA MODAL
+ .modal,
+ .modal-content,
+ .modal .modal-footer {
+     background-color: $white
+ }
+ 
+ .modal {
+     min-height: 85vh;
+     width: 60%;
+ }
+ 
+ #lenguajeVideos .card {
+     padding: 25px 0;
+     & .card-content {
+         padding: 15px;
+         & strong {
+             margin: 0;
+         }
+     }
+     & .card-content .title {
+         margin-top: -10px;
+         font-size: $typo-small-plus;
+         font-weight: 600;
+         text-align: center;
+         padding-bottom: 10px
+     }
+     & .card-content p {
+         font-size: $typo-small-plus-ultra;
+         word-wrap: break-word;
+         text-align: left;
+     }
+ }
+ 
+ #lenguajeVideos .row {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     & .col.s3.center-align {
+         margin: auto;
+         margin-top: 0
+     }
+ }
+ 
+ .row .col.aplicaciones_right {
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .col.aplicaciones_right>.col.s4.center-align {
+     margin: 0;
+ }
+ 
+ @media only screen and (max-width:1575px) {
+     #nav-mobile {
+         display: none;
+     }
+     .row .col.aplicaciones_right {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         & .col.s4 {
+             margin: 2em 0;
+         }
+     }
+     .row .col.aplicaciones_left {
+         width: 100%;
+     }
+     .row.aplicaciones_row {
+         display: flex;
+         flex-direction: column;
+         justify-content: center
+     }
+     .row .col.contactanos_right {
+         width: 100%
+     }
+     .row .col.contactanos_left {
+         width: 100%;
+     }
+     .row.contactanos_row {
+         display: flex;
+         flex-direction: column;
+         justify-content: center
+     }
+     .row .col.como_apoyar_right {
+         width: 100%
+     }
+     .row .col.como_apoyar_left {
+         width: 100%;
+     }
+     .row.como_apoyar_row {
+         display: flex;
+         flex-direction: column;
+         justify-content: center
+     }
+     .row .col.que_es_right {
+         width: 100%
+     }
+     .row .col.que_es_left {
+         width: 100%;
+     }
+     .row.row_que_es {
+         display: flex;
+         flex-direction: column;
+         justify-content: center
+     }
+     .row .col.ayuda_civil_right {
+         width: 100%;
+         padding-top: .25em;
+     }
+     .row .col.ayuda_civil_left {
+         width: 100%;
+     }
+     .row.row_ayuda_civil {
+         display: flex;
+         flex-direction: column;
+         justify-content: center
+     }
+     .row .col.ayuda_publica_right {
+         width: 100%;
+         padding-top: .25em;
+     }
+     .row .col.ayuda_publica_left {
+         width: 100%;
+     }
+     .row.row_ayuda_publica {
+         display: flex;
+         flex-direction: column;
+         justify-content: center
+     }
+     .row .col.bolsa_right {
+         width: 100%;
+         padding-top: .25em;
+     }
+     .row .col.bolsa_left {
+         width: 100%;
+     }
+     .row.row_bolsa_de_trabajo {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+     .bolsa_de_trabajo.bolsa_responsive .col.s3 {
+         width: 50%;
+     }
+ }
+ 
+ @media only screen and (max-width:1090px) {
+     .brand-logo {
+         width: 100%;
+         text-align: center;
+     }
+ }
+ 
+ @media only screen and (max-width:560px) {
+     .titulo_principal {
+         font-size: 2em
+     }
+     h1,
+     h1.col {
+         font-size: 3em;
+         padding: 0;
+         margin: 0 .25em
+     }
+     .contenedor_apps {
+         margin-top: 1em;
+         & .aplicaciones_left {
+             margin-bottom: 1em;
+         }
+     }
+     .row .col.aplicaciones_right>.col.s4 {
+         width: 100%
+     }
+     .s4.col.bolsa_left>h1,
+     #ayuda_civil {
+         margin-top: 1em;
+     }
+     #bolsa_de_trabajo {
+         margin-bottom: 0
+     }
+     .bolsa_de_trabajo.bolsa_responsive>.col.s3 {
+         width: 100%
+     }
+ }
+ 
+ h1.titulo_principal {
+     text-align: center;
+     margin-top: 3em;
+ }
+ 
+ // Parche para MailerLite
+ #createConv {
+     display: none!important;
+ }

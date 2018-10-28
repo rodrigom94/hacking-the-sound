@@ -1,0 +1,57 @@
+section.contenedor_apps.valign-wrapper#aplicaciones
+      .row.container.valign-wrapper.aplicaciones_row
+        h1.col.s4.aplicaciones_left Aplicaciones <span class="texto_en_negrita">nuestras</span> y de <span class="texto_en_negrita">terceros</span>
+        div.col.s8.aplicaciones_right
+          div.col.s4.center-align
+            .card
+              .card-image
+                a(href="./#ayuda_civil"): i.large.material-icons people
+              .card-content
+                h2: a(href="./#ayuda_civil") Directorio de Organizaciones Civiles
+                p Encuentra organizaciones de apoyo a personas con discapacidad sonora.
+          div.col.s4.center-align
+            .card
+              .card-image
+                a(href="./#ayuda_publica"): i.large.material-icons account_balance
+              .card-content
+                h2: a(href="./#ayuda_publica") Directorio de Instituciones Públicas
+                p Encuentra centros oficiales de información y ayuda en Colombia.                     
+          div.col.s4.center-align
+            .card
+              .card-image
+                a(href="#bolsa_de_trabajo"): i.large.material-icons business
+              .card-content
+                h2: a(href="#bolsa_de_trabajo") Bolsa de Trabajo inclusiva
+                p Ofertas laborales aptas para personas con discapacidad sonora.
+          div.col.s4.center-align
+            .card
+              .card-image
+                a(href="https://web.telegram.org/#/im?p=g275596370" target="_blank"): i.large.material-icons account_circle
+              .card-content
+                h2: a(href="https://web.telegram.org/#/im?p=g275596370" target="_blank") Comunidad
+                p Súmate a nuestra comunidad de personas con discapacidad sonora
+          div.col.s4.center-align
+            .card
+              .card-image
+                a(href="#modal1").modal-trigger
+                  i.large.material-icons videocam
+              .card-content
+                h2 Lenguaje de Señas
+                p Vídeos para comunicarte mejor con personas con discapacidad sonora.
+            
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>Lenguaje de Señas</h4>
+                <p>En esta sección encontrarás recursos audiovisuales sobre el lenguaje de señas (ejemplo: mamá, paciencia). Este buscador ignora mayúsculas, espacios en blanco y tildes.</p>
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">search</i>
+                  <input id="input_text" type="text" data-length="10">
+                  <label for="input_text">Ingresa una palabra</label>
+                  </div>
+                  .col.s12.espacio_separacion.dropdown_hts
+                    section#lenguajeVideos.json_container_ayuda.row
+              </div>
+            br
+
+            </div>

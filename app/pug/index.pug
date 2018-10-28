@@ -1,0 +1,41 @@
+doctype
+html(lang="es")
+
+  head
+    title= "Hacking the Sound"
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    link(rel="stylesheet", href="styles/materialize.min.css")
+    link(rel="stylesheet",href="styles/styles.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    script(src="scripts/materialize.min.js")
+    <script>(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));_.parentNode.insertBefore(r,_);})(window, document, 'script','https://static.mailerlite.com/js/universal.js', 'ml');var ml_account = ml('accounts', '1252940', 'b6i5b7e6i3', 'load');</script>
+
+  body
+    include modules/menu.pug
+    section.contenedor.contenedor_principal.valign-wrapper
+      div.contenedor.center-align.container
+        h1.titulo_principal Construyamos un futuro mejor 
+          span.texto_en_negrita para todos
+        span.subtitulo Apoyo a personas con discapacidad sonora
+        .contenedor_de_botones
+          <a href="#aplicaciones" class="waves-effect waves-light btn-large boton boton-principal">soy discapacitado</a>
+          <a href="#como_apoyar" class="waves-effect waves-light btn-large boton boton-secundario">¡quiero apoyar!</a>
+    section.contenedor_nosotros.valign-wrapper.container.row.row_que_es#que_es
+      div.col.s4.que_es_left
+        h1 ¿Qué es <span class="texto_en_negrita">Hacking the Sound</span>?
+      div.col.s8.little-padding.que_es_right
+        p Somos una plataforma de apoyo para personas con discapacidad sonora. 
+        p Nuestro objetivo es integrar, desarrollar y aumentar el alcance de aplicaciones tecnológicas que ayudan tanto a personas con discapacidad como a quienes buscan brindar alguna forma de apoyo a esta población vulnerable.
+        p Para lograrlo, fomentamos el hackeo como una forma de plantear soluciones poco comunes a problemas cotidianos y así mejorar la calidad de vida de las personas con discapacidad auditiva.
+        p Soñamos con un mundo más inclusivo, con más oportunidades para todos.  
+        p: a(href="#como_apoyar") Quiero apoyar
+    include modules/contenedor_apps.pug
+    include modules/contenedor_ayuda_civil.pug
+    include modules/contenedor_ayuda_publica.pug
+    include modules/contenedor_bolsa_de_trabajo.pug
+    include modules/contenedor_como_apoyar.pug
+    include modules/contactanos.pug 
+
+    include modules/footer.pug
+
+  script(src="scripts/main.js")

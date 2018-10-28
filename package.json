@@ -1,0 +1,27 @@
+{
+    "name": "proyecto",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.3",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-clean-css": "^3.10.0",
+        "gulp-pug": "^4.0.1",
+        "gulp-sass": "^4.0.2",
+        "node-sass": "^4.9.4"
+    },
+    "dependencies": {
+        "@google-cloud/storage": "^2.2.0",
+        "@google-cloud/text-to-speech": "^0.3.0",
+        "goblindb": "0.0.8",
+        "materialize-css": "^1.0.0-rc.2",
+        "request-json": "^0.6.3"
+    }
+}
